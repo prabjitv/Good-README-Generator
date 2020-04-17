@@ -1,6 +1,10 @@
 function generateMarkdown(data) {
   return `
 # ${data.title}
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
 * At least one badge
 * Project title

@@ -1,38 +1,55 @@
-const axios = require("axios");
+const axios = require("axios").default;
 const inquirer = require("inquirer");
 const dotenv = require("dotenv");
+const fs = require("fs");
+
+const accessToken = process.env.accessToken;
 
 const questions = [
   inquirer
     .prompt([
       {
-        type: input,
-        name: username,
-        message: "Hello! What's your GitHub username?"
-
+        type: "input",
+        name: "username",
+        message: "Hello! What's your GitHub username?",
+      },
+      {
+        type: "input",
+        name: "projectTitle",
+        message: "Project Title:",
+      },
+      {
+        type: "input",
+        name: "description",
+        message: "Project Description:",
       }
-
-
-
-
     ])
-    .then(answers => {
-      // Use user feedback for... whatever!!
+    .then(function (answers) {
+      const url = `https://api.github.com/users/${answers.username}?access_token=${accessToken}`;
+
+      axios
+        .get(url)
+        .then(function (res, err) {
+          if (err) throw err;
+
+          const responseSaved = {
+            userName = res
+          }
+      
+          return responseSaved;
+          
+        });
     })
-    .catch(error => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        // Something else when wrong
-      }
-    });
 ];
 
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+// }
 
-function init() {
+async function init() {
+  const apiReturn = await api.js(
 
-}
+  )
 
-init();
+// }
+
+// init();
