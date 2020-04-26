@@ -1,12 +1,11 @@
-function generateMarkdown(data) {
-  return `
-  # ${data.title}  
-  ![Generic badge](https://img.shields.io/github/repo-size/${data.username}/${data.repo})  
+
+  # undefined  
+  ![Generic badge](https://img.shields.io/github/repo-size/prabjitv/undefined)  
   ## Author Info:  
-  ![Profile Picture](${data.profile})  
-  Email: ${data.email}  
+  ![Profile Picture](https://avatars2.githubusercontent.com/u/58503954?v=4)  
+  Email: undefined  
   ## Project Description:   
-  ${data.description}  
+  fdsa  
   ## Table of contents:  
   [Installation](#installation)  
   [Usage](#usage)  
@@ -14,16 +13,13 @@ function generateMarkdown(data) {
   [Contributing](#contributing)  
   [License](#license)  
   ## Installation:<a id=installation></a>   
-  ${data.install}  
+  undefined  
   ## Usage:<a id=usage></a>  
-  ${data.use}  
+  undefined  
   ## Tests:<a id=tests></a>  
-  ${data.tests}
+  undefined
   ## Contributing:<a id=contributing></a>  
-  ${data.contribute}  
+  undefined  
   ## License:<a id=license></a>  
-  ${data.license}
-  `;
-}
-
-module.exports = generateMarkdown;
+  undefined
+  
