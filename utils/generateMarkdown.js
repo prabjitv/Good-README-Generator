@@ -5,8 +5,9 @@ function generateMarkdown(data) {
   ## Author Info: ${data.yourname}  
   ![Profile Picture](${data.profile})  
   Email: ${data.email}  
-  ## Project Description:   
+  ## Project Title:   
   ${data.projectTitle}  
+  ### Project Description:   
   ${data.description}  
   ## Table of contents:  
   [Installation](#installation)  

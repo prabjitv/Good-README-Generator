@@ -1,11 +1,12 @@
 
   # README Generator 
   ![Generic badge](https://img.shields.io/github/repo-size/)
-  ## Author Info: prabjit  
+  ## Author Info: Prabjit  
   ![Profile Picture](https://avatars2.githubusercontent.com/u/58503954?v=4)  
-  Email: Prabjit@gmail.com  
-  ## Project Description:   
-  Making a Decent README  
+  Email: prabjitv@gmail.com  
+  ## Project Title:   
+  Good README  
+  ### Project Description:   
   Using Node, NPM, Inquirer, Axios, and Markdown create a dynamically generated  
   ## Table of contents:  
   [Installation](#installation)  
@@ -18,7 +19,7 @@
   ## Usage:<a id=usage></a>  
   Used to learn Node and Markdown basics  
   ## Tests:<a id=tests></a>  
-  Didn't run any tests. Shield Badge still doesn't work
+  Didn't run any tests. Badge still doesn't work
   ## Contributing:<a id=contributing></a>  
   Thanks YouTube  
   ## License:<a id=license></a>  
