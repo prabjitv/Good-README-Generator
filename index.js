@@ -6,9 +6,17 @@ const generateMarkdown = require("./utils/generateMarkdown");
 dotenv.config();
 
 const questions = [
-  { name: "username", message: "Hello! What's your GitHub username?" },
+  { name: "yourname", message: "Hello! What's your name?" },
+  { name: "email", message: "What's your email?" },
+  { name: "username", message: "What's your GitHub username?" },
   { name: "projectTitle", message: "Project Title:" },
-  { name: "description", message: "Project Description:" }
+  { name: "description", message: "Project Description:" },
+  { name: "install", message: "Intallation Notes:" },
+  { name: "usage", message: "Usage Notes:" },
+  { name: "test", message: "Test Notes:" },
+  { name: "contribute", message: "Contribution Notes:" },
+  { name: "license", message: "License Notes:" },
+  // { name: "install", message: "Intallation Notes:" },
 ];
 
 function writeToFile(fileName, data) {
@@ -19,20 +27,24 @@ function writeToFile(fileName, data) {
 };
 
 function init() {
-  inquirer.prompt(questions).then(answers => {
+  inquirer.prompt(questions).then(function (answers) {
     const accessToken = process.env.accessToken;
     axios.get(`https://api.github.com/users/${answers.username}?access_token=${accessToken}`)
-      .then(res, err => {
-        if (err) throw err;
-        var projectName = res.data.projectTitle;
-        var profile = res.data.avatar_url;
-        answers.project = projectName;
-        answers.profile = profile;
+      .then(function(res){
+        // answers.yourname = res.data.yourname;
+        answers.username = res.data.username;
+        // answers.projectTitle = res.data.projectTitle;
+        // answers.description = res.data.description;
+        // answers.install = res.data.intstall;
+        // answers.usage = res.data.usage;
+        // answers.test = res.data.test;
+        // answers.contribute = res.data.contribute;
+        answers.profile = res.data.avatar_url;
         const data = generateMarkdown(answers);
         writeToFile('README.md', data);
       });
   });
 };
 
-init()
-// .catch((err) => { throw err});
+init();
+

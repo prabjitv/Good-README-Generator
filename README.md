@@ -1,11 +1,12 @@
 
-  # undefined  
-  ![Generic badge](https://img.shields.io/github/repo-size/prabjitv/undefined)  
-  ## Author Info:  
+  # README Generator 
+  ![Generic badge](https://img.shields.io/github/repo-size/)
+  ## Author Info: prabjit  
   ![Profile Picture](https://avatars2.githubusercontent.com/u/58503954?v=4)  
-  Email: undefined  
+  Email: Prabjit@gmail.com  
   ## Project Description:   
-  fdsa  
+  Making a Decent README  
+  Using Node, NPM, Inquirer, Axios, and Markdown create a dynamically generated  
   ## Table of contents:  
   [Installation](#installation)  
   [Usage](#usage)  
@@ -13,13 +14,13 @@
   [Contributing](#contributing)  
   [License](#license)  
   ## Installation:<a id=installation></a>   
-  undefined  
+  As a user, you'd have to have the whole project installed locally to use it. Sorry.  
   ## Usage:<a id=usage></a>  
-  undefined  
+  Used to learn Node and Markdown basics  
   ## Tests:<a id=tests></a>  
-  undefined
+  Didn't run any tests. Shield Badge still doesn't work
   ## Contributing:<a id=contributing></a>  
-  undefined  
+  Thanks YouTube  
   ## License:<a id=license></a>  
-  undefined
+  2020 Pandemic
   

@@ -1,11 +1,12 @@
 function generateMarkdown(data) {
   return `
-  # ${data.title}  
-  ![Generic badge](https://img.shields.io/github/repo-size/${data.username}/${data.repo})  
-  ## Author Info:  
+  # README Generator 
+  ![Generic badge](https://img.shields.io/github/repo-size/)
+  ## Author Info: ${data.yourname}  
   ![Profile Picture](${data.profile})  
   Email: ${data.email}  
   ## Project Description:   
+  ${data.projectTitle}  
   ${data.description}  
   ## Table of contents:  
   [Installation](#installation)  
@@ -16,14 +17,13 @@ function generateMarkdown(data) {
   ## Installation:<a id=installation></a>   
   ${data.install}  
   ## Usage:<a id=usage></a>  
-  ${data.use}  
+  ${data.usage}  
   ## Tests:<a id=tests></a>  
-  ${data.tests}
+  ${data.test}
   ## Contributing:<a id=contributing></a>  
   ${data.contribute}  
   ## License:<a id=license></a>  
   ${data.license}
   `;
 }
-
 module.exports = generateMarkdown;
